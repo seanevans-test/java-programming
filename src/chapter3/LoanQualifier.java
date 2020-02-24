@@ -19,6 +19,10 @@ public class LoanQualifier {
         Scanner scanner = new Scanner (System.in);
         double salary = scanner.nextDouble();
 
+        System.out.println("Enter the number of years with your current employer:");
+        double years = scanner.nextDouble();
+
+        scanner.close();
 
         //Make decision
     }
