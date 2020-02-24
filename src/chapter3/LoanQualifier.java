@@ -1,4 +1,7 @@
 package chapter3;
+
+import java.util.Scanner;
+
 /*
  * Nested Ifs:
  * To qualify for a loan, a person must make at least £30,000
@@ -12,6 +15,10 @@ public class LoanQualifier {
         int requiredYearsEmployed = 2;
 
         //Get what we don't
+        System.out.println("Enter your salary:");
+        Scanner scanner = new Scanner (System.in);
+        double salary = scanner.nextDouble();
+
 
         //Make decision
     }
