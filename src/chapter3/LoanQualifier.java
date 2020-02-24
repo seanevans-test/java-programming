@@ -29,8 +29,8 @@ public class LoanQualifier {
             if (years >= requiredYearsEmployed) {
                 System.out.println("Congratulations! you have qualified for the loan. ");
             } else {
-                System.out.println("Sorry, you need to have worked at your current job"
-                        + requiredYearsEmployed + "years.");
+                System.out.println("Sorry, you need to have worked at your current job for "
+                        + requiredYearsEmployed + " years.");
             }
         }
             else{
