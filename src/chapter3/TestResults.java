@@ -14,5 +14,9 @@ public class TestResults {
         //Determine the letter grade
         char grade;
 
+        if(score < 60){
+            grade = 'F';
+        }
+
     }
 }
