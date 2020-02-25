@@ -12,6 +12,7 @@ public class TestResults {
         double score = scanner.nextDouble();
 
         //Determine the letter grade
+        char grade;
 
     }
 }
