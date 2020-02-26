@@ -17,6 +17,8 @@ public class TestResults {
         if(score < 60){
             grade = 'F';
         }
-
+        else if(score < 70){
+            grade = 'D';
+        }
     }
 }
