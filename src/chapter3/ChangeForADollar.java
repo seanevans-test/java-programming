@@ -30,5 +30,14 @@ public class ChangeForADollar {
 
         scanner.close();
 
+        double total = numOfPennies + penny + numOfNickels + nickel + numOfDimes + dime + numOfQuarters + quarter;
+
+        if(total < dollar){
+            double amountShort = dollar - total;
+
+            //Way to make the decimal print with only  decimal places
+            System.out.println("Sorry, you lose! You were short " + String.format("%.2f", amountShort) + "Cents.");
+        }
+
     }
 }
