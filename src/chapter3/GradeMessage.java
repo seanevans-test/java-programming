@@ -28,6 +28,11 @@ public class GradeMessage {
             case "F":
                 message = "Uh oh!";
                 break;
+            default:
+                message = "Error. Invalid grade";
+                break;
         }
+
+        System.out.println(message);
     }
 }
