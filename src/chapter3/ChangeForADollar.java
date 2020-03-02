@@ -18,5 +18,17 @@ public class ChangeForADollar {
 
         System.out.println("Enter your number of pennies");
         int numOfPennies = scanner.nextInt();
+
+        System.out.println("Enter your number of nickels");
+        int numOfNickels = scanner.nextInt();
+
+        System.out.println("Enter your number of dimes");
+        int numOfDimes = scanner.nextInt();
+
+        System.out.println("Enter your number of quarters");
+        int numOfQuarters = scanner.nextInt();
+
+        scanner.close();
+
     }
 }
