@@ -10,8 +10,12 @@ public class GradeMessage {
         Scanner scanner = new Scanner(System.in);
         String grade = scanner.next();
 
+        String message;
+
         switch(grade){
             case "A":
+                message = "Excellent job!";
+                break;
         }
     }
 }
