@@ -11,7 +11,7 @@ public class GradeMessage {
         String grade = scanner.next();
 
         switch(grade){
-
+            case "A":
         }
     }
 }
