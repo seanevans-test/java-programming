@@ -6,9 +6,19 @@ package chapter4;
  *  to enter the number of hours worked for the week. Do not allow overtime.
  */
 
+import java.util.Scanner;
+
 public class GrossPayInputValidation {
     public static void main(String args[]){
 
+        //Initialize known variables
+        int rate = 15;
+        int maxHours = 40;
+
+        //Get input for known variables
+        System.out.println("How many hours did you work this week?");
+        Scanner scanner = new Scanner(System.in);
+        double hoursWorked = scanner.nextDouble();
 
     }
 }
