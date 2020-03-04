@@ -21,10 +21,16 @@ public class GrossPayInputValidation {
         double hoursWorked = scanner.nextDouble();
 
         //Validate input
-        while(hoursWorked > maxHours){
+        while(hoursWorked > maxHours || hoursWorked > 1){
             System.out.println("Invalid entry. Yours hours worked must be between 1 and 40. Try again");
             hoursWorked = scanner.nextDouble();
         }
+
+        scanner.close();
+
+        //Calculate gross
+        double gross = rate * hoursWorked;
+        System.out.println("Gross pay: £" + gross);
 
     }
 }
