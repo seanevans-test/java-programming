@@ -14,8 +14,14 @@ public class Cashier {
         //Get number of items to scan
         System.out.println("Enter the number of items you would like to scan:");
         Scanner scanner = new Scanner(System.in);
+        int quantity = scanner.nextInt();
         scanner.close();
 
         double total = 0;
+
+        //Create loop to iterate through all of the items and accumulate the costs
+        for(int i=0; i<quantity; i++){
+
+        }
     }
 }
