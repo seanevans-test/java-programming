@@ -1,0 +1,22 @@
+package chapter4;
+
+/*
+*LOOP BREAK
+* Search a string to determine if it contains the letter 'A'.
+ */
+
+import java.util.Scanner;
+
+public class LetterSearch {
+    public static void main(String args[]){
+
+        //Get text
+        System.out.println("Enter some text");
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.next();
+        scanner.close();
+
+        //Search for the letter 'A'
+
+    }
+}
