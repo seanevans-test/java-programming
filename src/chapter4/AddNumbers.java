@@ -7,13 +7,26 @@ package chapter4;
 * repeat this action until they indicate they are done.
  */
 
+import java.util.Scanner;
+
 public class AddNumbers {
 
     public static void main(String args[]){
 
-        Boolean again = false;
-        do {
+        Scanner scanner = new Scanner(System.in);
 
-        }while ( );
+        boolean again = false;
+        do {
+            System.out.println("Enter the first number");
+            double num1 = scanner.nextDouble();
+
+            System.out.println("Enter the second number");
+            double num2 = scanner.nextDouble();
+
+            double sum = num1 + num2;
+
+            System.out.println("The sum is " + sum);
+
+        }while (again);
     }
 }
