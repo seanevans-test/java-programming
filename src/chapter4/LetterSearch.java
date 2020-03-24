@@ -17,6 +17,8 @@ public class LetterSearch {
         scanner.close();
 
         //Search for the letter 'A'
+        for (int i=0; i<text.length(); i++){
 
+        }
     }
 }
