@@ -16,9 +16,14 @@ public class LetterSearch {
         String text = scanner.next();
         scanner.close();
 
+        boolean letterFound = false;
+
         //Search for the letter 'A'
         for (int i=0; i<text.length(); i++){
+            char currentLetter = text.charAt(i);
+            if (currentLetter == 'A'|| currentLetter == 'a'){
 
+            }
         }
     }
 }
