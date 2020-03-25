@@ -21,6 +21,17 @@ public class RollTheDiceGame {
 
             int dice = random.nextInt(6) + 1;
             currentSpace = currentSpace + dice;
+
+            System.out.print(String.format("Roll #%d: You have rolled a %d. ", i, dice));
+
+            if (currentSpace == lastSpace){
+                System.out.print("You are on space" + currentSpace + ". Congrats! you win.");
+                break;
+            }
+            else if (currentSpace > lastSpace){
+                System.out.print("Unfortunately, that takes you past " + lastSpace + " spaces. You lose!");
+                break;
+            }
         }
     }
 }
