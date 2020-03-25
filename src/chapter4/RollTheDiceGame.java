@@ -5,5 +5,16 @@ package chapter4;
 * in 5 dice rolls.
  */
 
+import java.util.Random;
+
 public class RollTheDiceGame {
+
+    public static void main(String args[]){
+        int lastSpace = 20;
+        int currentSpace = 0;
+        int maxRolls = 5;
+        Random random = new Random();
+
+        System.out.println("Welcome to roll the dice, let's begin ");
+    }
 }
