@@ -16,5 +16,11 @@ public class RollTheDiceGame {
         Random random = new Random();
 
         System.out.println("Welcome to roll the dice, let's begin ");
+
+        for (int i=1; i<maxRolls; i++){
+
+            int dice = random.nextInt(6) + 1;
+            currentSpace = currentSpace + dice;
+        }
     }
 }
