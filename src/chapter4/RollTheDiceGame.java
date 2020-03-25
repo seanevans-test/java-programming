@@ -32,6 +32,15 @@ public class RollTheDiceGame {
                 System.out.print("Unfortunately, that takes you past " + lastSpace + " spaces. You lose!");
                 break;
             }
+            else if (i==maxRolls && currentSpace< lastSpace){
+                System.out.println("You are on space " + currentSpace + ".");
+                System.out.println("Unfortunately you did not make it to all" + lastSpace + " spaces. You lose!");
+            }
+            else{
+                int spacesToGo = lastSpace - currentSpace;
+                System.out.print("You are now on space " + currentSpace + " you have " + spacesToGo + " more to go.");
+            }
+            System.out.println();
         }
     }
 }
