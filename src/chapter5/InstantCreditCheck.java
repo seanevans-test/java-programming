@@ -11,5 +11,15 @@ public class InstantCreditCheck {
 
     public static void main(String args[]){
 
+        //Initialise what we know
+        int requiredSalary = 25000;
+        int requiredCreditScore = 700;
+
+        //Get what we don't know
+
+        //Check if the user is qualified
+
+        //Notify the user
+
     }
 }
