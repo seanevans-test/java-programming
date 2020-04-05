@@ -17,25 +17,14 @@ public class InstantCreditCheck {
 
     public static void main(String args[]){
 
-        //Initialise what we know
-
-
-        //Get what we don't know
-        getFormData();
+        double salary = getSalary();
+        int creditScore = getCreditScore();
         scanner.close();
 
         //Check if the user is qualified
-        isUserQualified();
+        isUserQualified(creditScore, salary);
 
         //Notify the user
-
-    }
-
-    public static void getFormData(){
-
-
-
-
 
     }
 
@@ -51,9 +40,12 @@ public class InstantCreditCheck {
         return creditScore;
     }
 
-    public static boolean isUserQualified(){
+    public static boolean isUserQualified(int creditScore, double salary){
         if (creditScore >= requiredCreditScore && salary >= requiredSalary){
-
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
