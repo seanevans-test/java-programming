@@ -13,6 +13,7 @@ public class InstantCreditCheck {
 
     static int requiredSalary = 25000;
     static int requiredCreditScore = 700;
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String args[]){
 
@@ -21,6 +22,7 @@ public class InstantCreditCheck {
 
         //Get what we don't know
         getFormData();
+        scanner.close();
 
         //Check if the user is qualified
         isUserQualified();
@@ -30,14 +32,23 @@ public class InstantCreditCheck {
     }
 
     public static void getFormData(){
-        System.out.println("Enter your Salary:");
-        Scanner scanner = new Scanner(System.in);
-        double salary = scanner.nextDouble();
 
+
+
+
+
+    }
+
+    public static double getSalary(){
+        System.out.println("Enter your Salary:");
+        double salary = scanner.nextDouble();
+        return salary;
+    }
+
+    public static int getCreditScore(){
         System.out.println("Enter your credit score:");
         int creditScore = scanner.nextInt();
-
-        scanner.close();
+        return creditScore;
     }
 
     public static boolean isUserQualified(){
