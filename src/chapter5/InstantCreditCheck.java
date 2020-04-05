@@ -7,6 +7,8 @@ package chapter5;
 * Reject all others.
  */
 
+import java.util.Scanner;
+
 public class InstantCreditCheck {
 
     public static void main(String args[]){
@@ -21,5 +23,16 @@ public class InstantCreditCheck {
 
         //Notify the user
 
+    }
+
+    public static void getFormData(){
+        System.out.println("Enter your Salary:");
+        Scanner scanner = new Scanner(System.in);
+        double salary = scanner.nextDouble();
+
+        System.out.println("Enter your credit score:");
+        int creditScore = scanner.nextInt();
+
+        scanner.close();
     }
 }
