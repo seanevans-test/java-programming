@@ -11,15 +11,19 @@ import java.util.Scanner;
 
 public class InstantCreditCheck {
 
+    static int requiredSalary = 25000;
+    static int requiredCreditScore = 700;
+
     public static void main(String args[]){
 
         //Initialise what we know
-        int requiredSalary = 25000;
-        int requiredCreditScore = 700;
+
 
         //Get what we don't know
+        getFormData();
 
         //Check if the user is qualified
+        isUserQualified();
 
         //Notify the user
 
@@ -34,5 +38,11 @@ public class InstantCreditCheck {
         int creditScore = scanner.nextInt();
 
         scanner.close();
+    }
+
+    public static boolean isUserQualified(){
+        if (creditScore >= requiredCreditScore && salary >= requiredSalary){
+
+        }
     }
 }
