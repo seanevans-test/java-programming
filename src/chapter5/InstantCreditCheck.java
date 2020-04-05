@@ -22,9 +22,10 @@ public class InstantCreditCheck {
         scanner.close();
 
         //Check if the user is qualified
-        isUserQualified(creditScore, salary);
+        boolean qualified = isUserQualified(creditScore, salary);
 
         //Notify the user
+        notifyUser(qualified);
 
     }
 
@@ -46,6 +47,15 @@ public class InstantCreditCheck {
         }
         else{
             return false;
+        }
+    }
+
+    public static void notifyUser(boolean isQualified){
+        if(isQualified){
+            System.out.println("Congrats! you have been approved.");
+        }
+        else{
+            System.out.println("Sorry, You have been declined.");
         }
     }
 }
