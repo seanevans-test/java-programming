@@ -6,6 +6,7 @@ public class HomeAreaCalcualtorRedo {
 
     public static void main(String args[]){
 
+        HomeAreaCalcualtorRedo calculator = new HomeAreaCalcualtorRedo();
         Rectangle kitchen = getRoom();
         Rectangle bathroom = getRoom();
     }
