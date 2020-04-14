@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class HomeAreaCalcualtorRedo {
 
+    private Scanner scanner = new Scanner(System.in);
+
     public static void main(String args[]){
 
         HomeAreaCalcualtorRedo calculator = new HomeAreaCalcualtorRedo();
@@ -13,18 +15,17 @@ public class HomeAreaCalcualtorRedo {
         double area = calculator.calculateTotalArea(kitchen, bathroom);
 
         System.out.println("The total area is: " + area);
+
+        calculator.scanner.close();
     }
 
     public Rectangle getRoom(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the length of your room:");
         double length = scanner.nextDouble();
 
         System.out.println("Enter the width of your room:");
         double width = scanner.nextDouble();
-
-        scanner.close();
 
         return new Rectangle(length, width);
     }
