@@ -9,5 +9,14 @@ public class HomeAreaCalculator {
 
     public static void main(String args[]){
 
+        /************************
+         * 1st Rectangle
+         ***********************/
+
+        //Create instance of rectangle class
+        Rectangle room1 = new Rectangle();
+        room1.setWidth(25);
+        room1.setLength(50);
+        double areaOfRoom1 = room1.calculateArea();
     }
 }
