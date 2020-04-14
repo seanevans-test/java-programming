@@ -10,6 +10,11 @@ public class Rectangle {
         width = 0;
     }
 
+    public Rectangle(double  length, double width){
+        this.length = length; //can be set this way
+        setWidth(width); //or can be set this way
+    }
+
     double getLength(){
         return length;
     }
