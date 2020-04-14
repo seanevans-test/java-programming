@@ -9,6 +9,10 @@ public class HomeAreaCalcualtorRedo {
         HomeAreaCalcualtorRedo calculator = new HomeAreaCalcualtorRedo();
         Rectangle kitchen = getRoom();
         Rectangle bathroom = getRoom();
+
+        double area = calculator.calculateTotalArea(kitchen, bathroom);
+
+        System.out.println("The total area is: " + area);
     }
 
     public Rectangle getRoom(){
@@ -23,5 +27,9 @@ public class HomeAreaCalcualtorRedo {
         scanner.close();
 
         return new Rectangle(length, width);
+    }
+
+    public double calculateTotalArea(Rectangle rectangle1, Rectangle rectangle2){
+        return rectangle1.calculateArea() + rectangle2.calculateArea();
     }
 }
