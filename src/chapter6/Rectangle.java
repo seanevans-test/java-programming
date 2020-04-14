@@ -2,8 +2,8 @@ package chapter6;
 
 public class Rectangle {
 
-    double length;
-    double width;
+    private double length;
+    private double width;
 
     public Rectangle(){
         length = 0;
@@ -15,27 +15,27 @@ public class Rectangle {
         setWidth(width); //or can be set this way
     }
 
-    double getLength(){
+    public double getLength(){
         return length;
     }
 
-    void setLength(double length){
+    public void setLength(double length){
         this.length = length;
     }
 
-    double getWidth(){
+    public double getWidth(){
         return width;
     }
 
-    void setWidth(double width){
+    public void setWidth(double width){
         this.width = width;
     }
 
-    double calculatePerimeter(){
+    public double calculatePerimeter(){
         return (2 * length) + (2 * width);
     }
 
-    double calculateArea(){
+    public double calculateArea(){
         return length * width;
     }
 }
