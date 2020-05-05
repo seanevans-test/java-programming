@@ -60,7 +60,33 @@ public class PhoneBill {
         minutesUsed = minutes;
     }
 
+    public double calculateOverage(){
+        if (minutesUsed <= allottedMinutes){
+            return 0;
+        }
 
+        double overageRate = 0.25;
+        double overageMinutes = minutesUsed - allottedMinutes;
+        return overageMinutes * overageRate;
+
+    }
+
+    public double calculateTax(){
+        double taxRate = 0.15;
+        return taxRate * (baseCost + calculateOverage());
+    }
+
+    public double calculateTotal(){
+        return baseCost + calculateOverage() + calculateTax();
+    }
+
+    public void printItemizedBill(){
+        System.out.println("ID: " + id);
+        System.out.println("Base Rate: £" + baseCost);
+        System.out.println("Overage Fee: £" + String.format("%.2f", calculateOverage() ));
+        System.out.println("Tax: £" + String.format("%.2f", calculateTax()));
+        System.out.println("Total: £" + String.format("%.2f", calculateTotal()));
+    }
 
 
 }
