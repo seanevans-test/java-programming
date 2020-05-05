@@ -9,8 +9,8 @@ public class HomeAreaCalcualtorRedo {
     public static void main(String args[]){
 
         HomeAreaCalcualtorRedo calculator = new HomeAreaCalcualtorRedo();
-        Rectangle kitchen = getRoom();
-        Rectangle bathroom = getRoom();
+        Rectangle kitchen = calculator.getRoom();
+        Rectangle bathroom = calculator.getRoom();
 
         double area = calculator.calculateTotalArea(kitchen, bathroom);
 
