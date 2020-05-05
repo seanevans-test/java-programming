@@ -36,5 +36,31 @@ public class PhoneBill {
         this.id = id;
     }
 
+    public double getBaseCost(){
+        return baseCost;
+    }
+
+    public void setBaseCost(double baseCost){
+        this.baseCost = baseCost;
+    }
+
+    public int getAllottedMinutes(){
+        return allottedMinutes;
+    }
+
+    public void setAllottedMinutes(int minutes){
+        allottedMinutes = minutes;
+    }
+
+    public int getMinutesUsed(){
+        return minutesUsed;
+    }
+
+    public void setMinutesUsed(int minutes){
+        minutesUsed = minutes;
+    }
+
+
+
 
 }
