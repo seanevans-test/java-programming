@@ -16,7 +16,7 @@ public class Month {
                 case 10: return "October";
                 case 11: return "November";
                 case 12: return "December";
-                default: return "Invalid month. Please enter a value between 1 and 12"
+                default: return "Invalid month. Please enter a value between 1 and 12";
             }
     }
 
